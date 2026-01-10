@@ -20,7 +20,9 @@
    ```
 4. Vérifier la structure du projet
    ```
-   !ls -R
+   from pathlib import Path
+   for p in Path(".").rglob("*"):
+       print(p)
    ```
    Vous devriez voir les dossiers :
 - src — code à adapter
