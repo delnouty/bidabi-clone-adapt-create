@@ -4,6 +4,10 @@
    ```
    !git clone https://github.com/delnouty/bidabi-clone-adapt-create.git
    ```
+   add if not installed
+   ```
+   pip install pickleshare
+   ```
 2. Puis entrez dans le dossier :
 ```
 %cd bidabi-clone-adapt-create
