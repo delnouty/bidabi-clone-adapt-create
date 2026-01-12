@@ -33,4 +33,7 @@
 - data — votre jeu de données
 - notebooks — notebooks d’exemples
 - reports — rapport final
-
+5. Run file data_loader.py
+   ```
+   %run ./src/data_loader.py
+   ```
