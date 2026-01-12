@@ -17,8 +17,8 @@ CATEGORY = "champagnes"
 def create_session():
     session = requests.Session()
     retry = Retry(
-        total=5,                     # 5 попыток
-        backoff_factor=1.5,          # экспоненциальная пауза
+        total=5,                     # 5 try
+        backoff_factor=1.5,          # pause
         status_forcelist=[429, 500, 502, 503, 504],
         allowed_methods=["GET"]
     )
