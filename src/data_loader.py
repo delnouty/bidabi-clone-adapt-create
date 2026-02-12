@@ -50,7 +50,7 @@ def fetch_page(category, page, page_size):
 
 def get_best_image(product):
     """
-    Пытаемся взять лучший доступный URL.
+    
     """
     return (
         product.get("image_url")
@@ -91,7 +91,7 @@ def download_image(image_url, image_id, folder="images"):
     ext = image_url.split(".")[-1].split("?")[0]
     filename = os.path.join(folder, f"{image_id}.{ext}")
 
-    # если файл уже скачан — пропускаем
+    
     if os.path.exists(filename):
         return
 
